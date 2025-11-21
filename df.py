@@ -1,5 +1,10 @@
-str1=input("enter first string")
-str2=input("enter second string")
-str3=str1.replace(str1[0],str2[0])
-str4=str2.replace(str2[0],str1[0])
-print(str3+" "+str4)
+
+File1=input("Enter the source file to be copied")
+File2=input("Enter the destination file name")
+Fr=open (File1,"w")
+
+Fw=open(File2,"w")
+for line in fr.readlines():
+    Fw.write(line)
+
+Fr.close()
